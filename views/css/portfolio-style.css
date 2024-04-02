@@ -363,6 +363,14 @@ footer li {
     width: 20.2rem; 
     align-self: flex-end;
 }
+
+.contact-container {
+    display: none;
+}
+
+#contact-header {
+    display: none;
+}
   
 /**************************************************************************
 MOBILE LAYOUT
