@@ -89,7 +89,7 @@ BUTTON - ANY SIZE
   }
 
 .btn-dark {
-    background: green;
+    background: #111;
     color: #fff;
     box-shadow: 0 3px 0 #2f302f;
 }
