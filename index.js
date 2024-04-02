@@ -13,6 +13,11 @@ app.use('/', function(req,res){
     //__dirname : It will resolve to your project folder.
   });
 
+  app.use('/news/', function(req,res){
+    res.sendFile(path.join(__dirname+'/views/news.html'));
+    //__dirname : It will resolve to your project folder.
+  });
+
   const server = http.createServer(app);
 const port = process.env.PORT || 3000;
 

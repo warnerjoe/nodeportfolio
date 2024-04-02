@@ -1,0 +1,149 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: black;
+}
+
+#site-wrapper {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 144rem;
+  background: white;
+  margin: auto;
+  overflow: hidden;
+  background: white;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: black;
+  color: white;
+  font-size: 1.4rem;
+}
+
+header img {
+  max-height: 50px;
+}
+
+h4 {
+  margin-left: .5rem;
+  display: inline;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header li {
+  display: inline-block;
+  margin: 0 2rem;
+}
+
+header a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+header button {
+  margin-right: 1rem;
+}
+
+.splash-divider {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.large-article {
+  background: url('../images/large-article.jpg') orange;
+  background-size: 100% 100%;
+  flex-basis: 48%;
+  height: 400px;
+  width: 100%;
+}
+
+.small-article-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 48%;
+  margin-left: 1rem;
+}
+
+.small-article {
+  flex-basis: 45%;
+  margin: 0 1rem 1rem 0;
+}
+
+#small-1 {
+  background: url('../images/small-1.jpg') orange;
+  background-size: 100% 100%;
+}
+
+#small-2 {
+  background: url('../images/small-2.jpg') orange;
+  background-size: 100% 100%;
+}
+
+#small-3 {
+  background: url('../images/small-3.jpg') orange;
+  background-size: 100% 100%;
+}
+
+#small-4 {
+  background: url('../images/small-4.jpg') orange;
+  background-size: 100% 100%;
+}
+
+.medium-article {
+ flex-basis: 33%;
+ padding: 1rem;
+}
+
+.medium-article img {
+  max-width: 100%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
