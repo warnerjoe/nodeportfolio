@@ -39,6 +39,7 @@ li {
   height: 100%;
   background-color: white;
   margin-left: 5%;
+  overflow: hidden;
 }
 
 button, input[type="submit"], input[type="reset"] {
