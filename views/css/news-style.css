@@ -96,7 +96,7 @@ header button {
 }
 
 .large-article {
-  background: url('../images/large-article.jpg') orange;
+  background: url('../images/news/large-article.jpg') orange;
   background-size: 100% 100%;
   flex-basis: 48%;
   height: 400px;
@@ -116,22 +116,22 @@ header button {
 }
 
 #small-1 {
-  background: url('../images/small-1.jpg') orange;
+  background: url('../images/news/small-1.jpg') orange;
   background-size: 100% 100%;
 }
 
 #small-2 {
-  background: url('../images/small-2.jpg') orange;
+  background: url('../images/news/small-2.jpg') orange;
   background-size: 100% 100%;
 }
 
 #small-3 {
-  background: url('../images/small-3.jpg') orange;
+  background: url('../images/news/small-3.jpg') orange;
   background-size: 100% 100%;
 }
 
 #small-4 {
-  background: url('../images/small-4.jpg') orange;
+  background: url('../images/news/small-4.jpg') orange;
   background-size: 100% 100%;
 }
 
