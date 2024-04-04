@@ -99,7 +99,8 @@ footer, .copyright-section {
 }
 
 .head-main-container {
-  background: url('../images/mma/banner.jpg'), black;
+  filter: grayscale(60%);
+  background: url('../images/banner.jpg'), black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% auto;
