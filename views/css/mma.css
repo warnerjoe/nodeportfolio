@@ -100,7 +100,7 @@ footer, .copyright-section {
 
 .head-main-container {
   filter: grayscale(60%);
-  background: url('../images/banner.jpg'), black;
+  background: url('../images/mma/banner.jpg'), black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% auto;
