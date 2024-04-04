@@ -1,0 +1,175 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-size: 62.50%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: black;
+}
+
+.site-wrapper {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  max-width: 144rem;
+  background: white;
+  margin: auto;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+aside {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+  padding-right: 2rem;
+}
+
+.nav-logo {
+  width: 5rem;
+}
+
+aside h3 {
+  display: inline-block;
+  color: gold;
+}
+
+.splash-divider {
+  border-bottom: 1px solid gray;
+  margin-bottom: 2rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+nav li {
+  display: inline-block;
+}
+
+li a {
+  font-size: 2rem;
+  font-weight: 100;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.spotlight-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.large-article {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.large-art-image {
+  width: 100%;
+}
+
+.small-article-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.secondary-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.medium-article {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.med-article-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.medium-article > p {
+  padding: 2rem;
+  color: gray;
+  font-size: 1.2rem;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.medium-article > img {
+  width: 100%;
+  max-width: 33%;
+}
+
+.medium-article {
+  border-bottom: 1px solid gray;
+}
+
+.small-article {
+  border-top: 1px solid gray;
+}
+
+.small-article:first-of-type {
+  border-top: none;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.plus-logo {
+  margin-top: 2rem;
+  width: 5rem;
+}
