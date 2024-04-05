@@ -1,0 +1,216 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  font-size: 62.50%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f5f7f9;
+  color: #223446;
+  align-items: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body, header, main, .feature-container, .collecting-container, .main-left, .feature-card {
+  display: flex;
+}
+
+body, .collecting-container, .main-left, .feature-card {
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+header h1 {
+  font-size: 2.4rem;
+}
+
+header li {
+  display: inline-block;
+  font-size: 1.6rem;
+  margin: 0 2rem;
+}
+
+button {
+  padding: .8rem 2rem;
+  font-size: 1.6rem;
+  color: #f5f7f9;
+  background: #223446;
+}
+
+main {
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+.main-left {
+  flex-basis: 35%;
+}
+
+.main-left h5 {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-top: 1rem;
+  font-size: 4rem;
+  max-width: 75%;
+}
+
+.main-left form {
+  display: flex;
+  align-items: center;
+}
+
+.main-left input {
+  font-size: 1.4rem;
+  padding: .7rem 2rem;
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  max-width: 60%;
+}
+
+.main-right {
+  flex-basis: 35%;
+}
+
+main img {
+  max-width: 100%;
+}
+
+.feature-container {
+  margin: 7rem 0; 
+  justify-content: center;
+  width: 90%;
+}
+
+.feature-card {
+  flex-basis: 22%;
+}
+
+.feature-card i {
+  font-size: 3rem;
+}
+
+.feature-card h3 {
+  font-size: 1.8rem;
+}
+
+.feature-card h4 {
+  font-size: 1.6rem;
+}
+
+.feature-card p {
+  max-width: 80%;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media (max-width: 600px) {
+  main {
+    flex-wrap: wrap;
+    margin: 2rem;
+  }
+
+  header ul {
+    display: none;
+  }
+
+  .main-left {
+    flex-basis: 100%;
+  }
+
+  .main-left form {
+    flex-wrap: wrap;
+  }
+
+  .main-left input, .main-left button{
+    flex-basis: 100%;
+  }
+
+  .main-left input {
+    padding: 1.7rem;
+  }
+
+  .main-left button {
+    padding: 1.5rem;
+  }
+
+  input {
+    margin-bottom: 1rem;
+  }
+
+  .main-left p {
+    font-size: 1.8rem;
+    max-width: 100%;
+  }
+
+  .main-right {
+    flex-basis: 100%;
+  }
+
+  .feature-container {
+    flex-wrap: wrap;
+  }
+
+  .feature-card {
+    flex-basis: 40%;
+    margin-bottom: 2rem;
+  }
+
+  .collecting-container {
+    margin-left: 4rem;
+    margin-bottom: 5rem;
+  }
+}
