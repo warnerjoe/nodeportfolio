@@ -32,13 +32,14 @@ body {
 /******************************************
 /* LAYOUT
 /*******************************************/
-.first-bg, header, main, .main-button, .about-container, .menu-container, .reservation-container, .testimonials-container, form {
+.first-bg, header, main, .main-button, .about-container, .menu-container, .reservation-container, 
+.testimonials-container, form {
   padding: 0 10rem;
 }
 
 .first-bg, header, main, .main-button, .about-container, .menu-container, .reservation-container, 
 .testimonials-container, form, .testimonial-dots-container ul, 
-.menu-navigation-dots-container ul, .testimonial-card-container {
+.menu-navigation-dots-container ul, .testimonial-card-container, .book-video-container, .hours-of-operation {
   display: flex;
 }
 
@@ -53,19 +54,20 @@ body, .reservation-container, .main-container, .menu-container, .menu-card,
 }
 
 .menu-container, .testimonials-container , .testimonial-dots-container ul, .menu-navigation-dots-container ul, 
-.reservation-container, .testimonial-card-container  {
+.reservation-container, .testimonial-card-container, .book-video-container  {
   align-items: center;
 }
-
 
 .div-container {
   width: 90%;
   margin: 0 5%;
 }
 
+header, .hours-of-operation {
+  justify-content: space-between;
+}
 
 header {
-  justify-content: space-between;
   padding: 2rem 10rem;
 }
 
@@ -241,7 +243,57 @@ main i {
 }
 
 .reservation-container {
-  background: gray;
+  background: url("../images/restaurant/third-bg.jpg") repeat-y;
+  background-size: cover;
+  background-position: center;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.hours-of-operation {
+  width: 60%;
+}
+
+.book-video-container {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.fa-phone {
+  padding-top: 3rem;
+}
+
+.reservation-call-now {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.hours-days {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.hours-hours {
+  letter-spacing: .3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 0;
+  padding-bottom: 3rem;
+}
+
+.reservation-phone-number {
+  font-size: 2.4rem;
+  color: orange;
+  margin-top: 0;
+}
+
+.reservation-container i {
+  color: orange;
+  font-size: 4rem;
+}
+
+.reservation-vid-pic {
+  width: 60rem;
 }
 
 .testimonials-container h2 {
@@ -302,6 +354,7 @@ main i {
   color: gold;
   padding: .5rem;
   font-size: 2rem;
+  text-shadow: 1px 1px black;
 }
 
 .small-dot {
