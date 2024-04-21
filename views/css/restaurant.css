@@ -268,6 +268,7 @@ main i {
   width: 100%;
 }
 .menu-card-back {
+  backdrop-filter: blur(.5rem);
   transform: rotateY(180deg);
   backface-visibility: hidden;
   color: white;
