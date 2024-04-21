@@ -20,21 +20,296 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
+html {
+  font-size: 62.50%;
+}
 body {
-
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
+.first-bg, header, main, .main-button, .about-container, .menu-container, .reservation-container, .testimonials-container, form {
+  padding: 0 10rem;
 }
 
-footer {
+.first-bg, header, main, .main-button, .about-container, .menu-container, .reservation-container, 
+.testimonials-container, form, .testimonial-dots-container ul, 
+.menu-navigation-dots-container ul, .testimonial-card-container {
+  display: flex;
+}
 
+header, .main-socials-container, .about-container, .menu-cards-container, .menu-container > nav > ul, .hours-of-operation, .menu-btn {
+  flex-direction: row;
+}
+
+body, .reservation-container, .main-container, .menu-container, .menu-card, 
+.reservation-container, .hours-left, .hours-right, .testimonials-container, 
+.testimonial-card-container, .testimonial-card-container  {
+  flex-direction: column;
+}
+
+.menu-container, .testimonials-container , .testimonial-dots-container ul, .menu-navigation-dots-container ul, 
+.reservation-container, .testimonial-card-container  {
+  align-items: center;
+}
+
+
+.div-container {
+  width: 90%;
+  margin: 0 5%;
+}
+
+
+header {
+  justify-content: space-between;
+  padding: 2rem 10rem;
+}
+
+header, main {
+  color: white;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: orange;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 5rem;
+  font-weight: 500;
+  padding-bottom: 1.5rem;
+}
+
+h6 {
+  display: inline-block;
+  font-weight: 500;
+}
+
+li {
+  display: inline-block;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: inherit;
+  text-decoration: inherit;
+  text-shadow: 2px 2px black;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid white;
+}
+
+header li {
+  padding: 0 2rem;
+}
+
+#first-bg {  
+  padding: 0;
+  width: 100%;
+  background: url("../images/restaurant/first-bg.jpg") repeat-y;
+  background-size: cover;
+}
+
+main {
+
+  padding-bottom: 8rem;
+}
+
+main li {
+  padding-right: 6rem;
+}
+
+.main-content {
+  width: 50%;
+}
+
+form {
+  align-items: stretch;
+  padding: 0;
+}
+
+#main-mag {
+  position: absolute;
+  padding: 1.3rem .8rem; 
+  color: gray;
+}
+
+main input {
+  padding: 1rem 1rem 1rem 3rem;
+  width: 65%;
+  font-size: 1.8rem;
+  border-radius: .7rem 0 0 .7rem;
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+
+.main-button {
+  color: white;
+  background: orange;
+  font-size: 1.8rem;
+  padding: .9rem 2.5rem;
+  border-radius: 0 .7rem .7rem 0;
+  border: 1px solid orange;
+}
+
+.main-button i {
+  padding-left: .8rem;
+  color: white;
+}
+
+main a {
+  font-size: 2.2rem;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+main i {
+  font-size: 1.6rem;
+  color: orange;
+}
+
+.main-socials:first-of-type{
+  padding-left: 0;
+}
+
+.about-container {
+  justify-content: flex-end;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: url("../images/restaurant/second-bg.jpg") repeat-y;
+  background-size: cover;
+}
+
+.about-content {
+  width: 50%;
+}
+
+.about-container p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 3.2rem;
+}
+
+.menu-btn {
+  margin-top: 3rem;
+  display: flex;
+  align-items: stretch;
+  font-size: 1.6rem;
+  width: 50%;
+}
+
+.menu-btn .about-button {
+  padding: 1.4rem;
+  background: orange;
+  border-radius: .7rem 0 0 .7rem;
+}
+
+.menu-btn i {
+  background: orangered;
+  padding: 1.4rem;
+  border-radius: 0 .7rem .7rem 0;
+}
+
+.menu-1 {
+  background: url("../images/restaurant/menu1.png") repeat-y;
+}
+
+.menu-2 {
+  background: url("../images/restaurant/menu2.png") repeat-y;
+}
+
+.menu-3 {
+  background: url("../images/restaurant/menu3.png") repeat-y;
+}
+
+.menu-4 {
+  background: url("../images/restaurant/menu4.png") repeat-y;
+}
+
+.reservation-container {
+  background: gray;
+}
+
+.testimonials-container h2 {
+  padding-top: 6rem;
+}
+
+.testimonials-container h3 {
+  padding-bottom: 6rem;
+}
+
+.testimonial-card-container h4 {
+  font-size: 2.4rem;
+  padding-top: 2rem;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.testimonial-card-container h5 {
+  margin: 0;
+  padding-top: .6rem;
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+
+.testimonial-card-container p {
+  font-size: 1.8rem;
+  font-weight: 200;
+  width: 60%;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.testimonial-card-star-container {
+  padding-top: 2rem;
+  padding-left: 0;
+}
+
+.testimonial-pic {
+  width: 8rem;
+  border-radius: 50%;
+}
+
+.testimonial-dots-container {
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+}
+
+.testimonial-dots-container ul {
+  padding-left: 0;
+}
+
+.fa-circle {
+  color: orange;
+  padding: 1rem;
+}
+
+.fa-star {
+  color: gold;
+  padding: .5rem;
+  font-size: 2rem;
+}
+
+.small-dot {
+  font-size: 1.2rem;
+}
+
+.big-dot {
+  font-size: 2rem;
 }
 
 /******************************************
