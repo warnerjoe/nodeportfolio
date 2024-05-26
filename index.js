@@ -13,7 +13,7 @@ app.use('/', function(req,res){
     //__dirname : It will resolve to your project folder.
   });
 
-  const server = http.createServer(app);
+const server = http.createServer(app);
 const port = process.env.PORT || 3000;
 
 server.listen(port);
