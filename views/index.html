@@ -173,18 +173,23 @@
 								Whether you have a project in mind, need some advice, or just want to chat about web development, feel free to reach out. 
 								Let's create something amazing together!</p>
 
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
+								<form id="contact-form">
+									<div class="row">
+										<div class="col-6 col-12-mobile">
+											<input type="text" name="name" placeholder="Name" id="name" required />
+										</div>
+										<div class="col-6 col-12-mobile">
+											<input type="email" name="email" placeholder="Email" id="email" required />
+										</div>
+										<div class="col-12">
+											<textarea name="message" placeholder="Message" id="message" required></textarea>
+										</div>
+										<div class="col-12">
+											<input type="submit" value="Send Message" class="submit" />
+										</div>
 									</div>
-									<div class="col-12">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
+								</form>
+								
 
 						</div>
 					</section>
@@ -209,6 +214,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="/js/main.js"></script>
 			<script src="https://kit.fontawesome.com/5d009b8ae0.js" crossorigin="anonymous"></script>
 	</body>
 </html>
