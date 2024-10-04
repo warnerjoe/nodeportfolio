@@ -23,9 +23,9 @@ contactForm.addEventListener('submit', (e) => {
             formName.value = '';
             formEmail.value = '';
             formMessage.value = '';
-        } else {
+        } /*else {
             alert('Something went wrong');
-        }
+        }*/
     }
 
     xhr.send(JSON.stringify(formData));
