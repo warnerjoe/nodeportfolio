@@ -52,4 +52,4 @@ const server = http.createServer(app);
 const port = process.env.PORT || 3000;
 
 server.listen(port);
-console.debug('look at that beautiful server on port ' + port + ' p.s. golbez i haven\'t forgot what you did');
+console.debug('look at that beautiful server on port ' + port);
